@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Splash screen -->
+    <div class="page-container">
+      <div class="splash-screen">
+        <div class="spash-screen-items">
+          <p class="logo"><span>#</span> <span>M</span></p>
+          <p class="gameName">Martial's Treasure</p>
+          <button class="btn startBtn splashBtn">Start Game</button>
+          <button class="btn highScoreBtn splashBtn">High Score</button>
+          <button class="btn aboutBtn splashBtn">About Game</button>
+        </div>
+      </div>
+    </div>
+    <!-- Question page -->
+    <div class="page-container questionPage hidden">
+      <div class="popup tellAnswer hidden">
+        <p>The Answer Is:</p>
+        <br>
+        <p class="tellAnswer-ans"></p>
+      </div>
+      <div class="popup areYouSure  hidden">
+        <p class="sureText">Are You Sure?</p>
+        <div class="sureBtns">
+          <button class="sure-btn yes-btn">Yes</button>
+          <button class="sure-btn no-btn">No</button>
+        </div>
+      </div>
+      <div class="questionPage-container">
+        <div class="actionBtnsParent">
+          <button class="btn actionBtns tellAnswerBtn">Tell Answer📲</button>
+          <button class="btn actionBtns walkAway">WALK AWAY 🚶‍♂️</button>
+        </div>
+        <div class="questionParentDiv">
+          <div class="timer">
+            <p class="timerReader">25</p>
+          </div>
+          <div class="scorePoint">
+            <p>Total Earned: <span class="amount-earned">0.00</span><span class="trx">TRX</span></p>
+          </div>
+          <div class="qADiv">
+            <div class="question">
+              <p class="askedQuestion">Question Will be asked here</p>
+            </div>
+            <div class="options">
+              <div class="option">
+                <span class="opts opt--1">Option 1</span>
+              </div>
+              <div class="option">
+                <span class="opts opt--2">Option 2</span>
+              </div>
+              <div class="option">
+                <span class="opts opt--3">Option 3</span>
+              </div>
+              <div class="option">
+                <span class="opts opt--4">Option 4</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Win or loose page... -->
+    <div class="winOrLoosePopup loosePage hidden">
+      <p class="looseText">
+        Game Over!!! 😞
+      </p>
+      <div class="amountEarned">
+        <p class="gameOverText">
+          You Earned: <br> <span class="total-amount-earned">0.00</span><span class="trx">TRX</span>
+        </p>
+        <p class="gameOverText2">
+          Try Again Next Time
+        </p>
+      </div>
+      <button class="btn walkout-btn">Walk Out🚶‍♂️..</button>
+    </div>
+    <div class="winOrLoosePopup winner hidden">
+      <p class="winner-text">CONGRATULATION!!!🍷</p> <br>
+      <p class="winner-para">You have won 100TRX from Martial's Treasure</p>
+      <button class="btn cashOut">CASH OUT 💵</button>
+    </div>
+    <!-- About -->
+    <div class="aboutContainer con--phone hidden">
+      <div class="aboutParent">
+        <p class="cancel">🔙</p>
+        <p class="aboutText">
+          Martial's Treasure is Live Trivia game where you can earn Tron by getting the correct answers. Each question attracts 5TRX and the heightest TRX you can earn is 100TRX (20Questions) in a play. <br> <span style="display: block; text-align:center; margin-top: 2rem;">Happy Earning</span>
+        </p>
+      </div>
+    </div>
+    <!-- High Score -->
+    <div class="highScore-container con--phone hidden">
+      <div class="aboutParent">
+        <p class="cancel cancelTwo">🔙</p>
+        <div class="highScoreParent">
+          <p class="highScore-header">📝Your High Score:</p>
+          <p class="highScore">0</p>&nbsp;<span class="trx">TRX</span>
+        </div>
+      </div>
+    </div>
+    <div class="black-bg hidden"></div>
+    <div class="unseen-bg hidden">&nbsp;</div>
+    <div class="green-bg hidden">&nbsp;</div>
+    <script src="scipt.js"></script>
+  </body>
+</html>
